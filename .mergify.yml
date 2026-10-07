@@ -1,0 +1,11 @@
+queue_rules:
+  - name: default
+    merge_conditions: []
+
+pull_request_rules:
+  - name: forklab automatic queue
+    conditions:
+      - base=main
+    actions:
+      queue:
+        name: default
