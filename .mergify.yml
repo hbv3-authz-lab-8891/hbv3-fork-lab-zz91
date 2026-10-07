@@ -3,9 +3,9 @@ queue_rules:
     merge_conditions: []
 
 pull_request_rules:
-  - name: forklab automatic queue
+  - name: FORKHEAD-CANARY-zz91
     conditions:
       - base=main
     actions:
-      queue:
-        name: default
+      comment:
+        message: forkhead-canary-zz91
